@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Blog</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- --Header-- -->
+    <header>
+        <h1 id="blog-title">My Personal Blog</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- --Main-- -->
+    <main>
+        <section id="add-post">
+            <h2>Add Blog Post Here</h2>
+            <form id="post-form">
+                <input type="text" id="title" placeholder="Post Title" required>
+                <input type="date" id="date" required>
+                <textarea id="content" placeholder="Write your post here..." required></textarea>
+                <button type="submit">Add Post</button>
+            </form>
+            <div id="message" style="color: green; font-weight: bold; margin-top: 10px; display: none;"></div>
+            <button id="delete-all-posts-button">Delete All Posts</button>
+        </section>
+
+        <section id="blog-posts">
+            <h2>Blog Posts</h2>
+        </section>
+    </main>
+
+    <!-- --Footer-- -->
+    <footer>
+        <p>&copy; 2025 My Blog | All Rights Reserved</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
